@@ -45,10 +45,13 @@ public class Factorial {
             if (userChoice >= 1 && userChoice <= 10) {
                 return userChoice;
             }
-        } finally {
+        } catch (Exception e) {
             this.printStream.print("Invalid entry. Please enter an integer between 1 and 10, inclusive.");
             return -1;
         }
+
+        this.printStream.print("Invalid entry. Please enter an integer between 1 and 10, inclusive.");
+        return -1;
 
 		//YOUR CODE ENDS HERE
 		 

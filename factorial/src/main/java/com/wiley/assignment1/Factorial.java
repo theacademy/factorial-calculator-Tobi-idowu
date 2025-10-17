@@ -34,7 +34,7 @@ public class Factorial {
 		*/
 
 		//YOUR CODE STARTS HERE
-        // this.printStream.print("Enter an integer between 1 and 10, inclusive: ");
+        this.printStream.print("Enter an integer between 1 and 10, inclusive: ");
 
         String input = scanner.nextLine();
 
@@ -45,11 +45,10 @@ public class Factorial {
             if (userChoice >= 1 && userChoice <= 10) {
                 return userChoice;
             }
-        } catch (Exception e) {
+        } finally {
             this.printStream.print("Invalid entry. Please enter an integer between 1 and 10, inclusive.");
+            return -1;
         }
-
-		return -1;
 
 		//YOUR CODE ENDS HERE
 		 
